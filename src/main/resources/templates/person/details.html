@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+  <h1>Details</h1>
+  <div th:object="${user}">
+      <ul>
+          <li>ID: <span th:text="*{id}"</li>
+          <li>Nazwa użytkownika: <span th:text="*{username}"</li>
+          <li>Email: <span th:text="*{email}"</li>
+          <li>Aktywny: <span th:text="*{enabled}"</li>
+          <li>Ostatnie logowanie: <span th:text="*{lastLoginDate}"</li>
+      </ul>
+  </div>
+</body>
+</html>
